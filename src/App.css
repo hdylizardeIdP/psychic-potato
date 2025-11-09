@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.app-header {
+  text-align: center;
+  padding: 48px 24px 32px;
+  color: white;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.app-main {
+  flex: 1;
+  padding: 24px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.config-error {
+  background-color: white;
+  border-radius: 12px;
+  padding: 48px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.error-icon {
+  font-size: 64px;
+  margin-bottom: 24px;
+}
+
+.config-error h2 {
+  margin: 0 0 16px 0;
+  color: #2d3748;
+}
+
+.config-error p {
+  color: #718096;
+  margin-bottom: 24px;
+}
+
+.error-instructions {
+  background-color: #f7fafc;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: left;
+}
+
+.error-instructions p {
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 12px;
+}
+
+.error-instructions ol {
+  margin: 0;
+  padding-left: 20px;
+  color: #4a5568;
+}
+
+.error-instructions li {
+  margin-bottom: 8px;
+}
+
+.error-message {
+  background-color: #fff5f5;
+  border: 1px solid #fc8181;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #c53030;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error-message .error-icon {
+  font-size: 24px;
+  margin: 0;
+}
+
+.app-footer {
+  text-align: center;
+  padding: 24px;
+  color: white;
+  opacity: 0.8;
+}
+
+.app-footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .app-header h1 {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .config-error {
+    padding: 32px 24px;
+  }
+}
+
